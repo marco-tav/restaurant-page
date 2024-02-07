@@ -6,7 +6,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      title: "Marco's Ramen",
       filename: 'index.html',
       inject: 'head',
       scriptLoading: 'defer',
