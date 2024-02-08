@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10vh 87vh 3vh;
+}
+
+header {
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  color: lightgray;
+  background-color: black;
+}
+
+header h1 {
+  margin: 0 0 0 20px;
+  font-size: 3rem;
+}
+
+header nav {
+  margin-left: auto;
+  margin-right: 20px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+nav button {
+  border: none;
+  border-radius: 20px;
+  background-color: lightgray;
+  width: 80%;
+  height: 35px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#content {
+  grid-row: 2 / 3;
+}
+
+footer {
+  grid-row:  3 / 4;
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(206, 219, 240);
+  z-index: 2;
+  font-size: 1.2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  text-decoration: underline;
+  color: rgb(255, 208, 120);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer img {
+  width: 20px;
+}
