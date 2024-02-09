@@ -52,6 +52,15 @@ nav button {
   height: 35px;
   font-weight: 600;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: lightsalmon;
+}
+
+nav button:active {
+  background-color: salmon;
 }
 
 .main {
