@@ -1,3 +1,8 @@
+:root {
+  --system-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --system-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -14,17 +19,20 @@ body {
   background-color: rgb(19, 19, 19);
 }
 
+/*---------------------- HEADER STYLES -----------------------*/
+
 header {
   grid-row: 1 / 2;
   display: flex;
   align-items: center;
   color: lightsalmon;
   background-color: black;
+  font-family: var(--system-serif);
 }
 
 header h1 {
   margin: 0 0 0 20px;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 header nav {
@@ -78,8 +86,43 @@ nav button {
 
 #content {
   grid-column: 2 / 3;
-  padding: 20px;
+  padding: 40px 60px;
+  color: rgb(255, 202, 181);
+  font-family: var(--system-serif);
 }
+
+#content h2 {
+  font-size: 3rem;
+  margin: 0 0 50px 0;
+}
+
+.text > p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.slides-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  place-content: center;
+  margin-top: 100px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-placeholder {
+  background-color: lightgray;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/*------------------ FOOTER STYLES ------------------*/
 
 footer {
   grid-row:  3 / 4;
