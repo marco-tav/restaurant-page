@@ -91,6 +91,8 @@ nav button {
   font-family: var(--system-serif);
 }
 
+/*------------------ HOME STYLES --------------------*/
+
 #content h2 {
   font-size: 3rem;
   margin: 0 0 50px 0;
@@ -127,6 +129,34 @@ nav button {
 
 .img-placeholder > p {
   color: black;
+}
+
+/*------------------ MENU STYLES --------------------*/
+
+.menu-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  place-content: center;
+}
+
+.menu-item p {
+  text-align: justify;
 }
 
 /*------------------ FOOTER STYLES ------------------*/
