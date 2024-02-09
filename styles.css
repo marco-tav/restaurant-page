@@ -25,7 +25,7 @@ header {
   grid-row: 1 / 2;
   display: flex;
   align-items: center;
-  color: lightsalmon;
+  color: salmon;
   background-color: black;
   font-family: var(--system-serif);
 }
@@ -47,7 +47,7 @@ header nav {
 nav button {
   border: none;
   border-radius: 20px;
-  background-color: lightsalmon;
+  background-color: lightgray;
   width: 80%;
   height: 35px;
   font-weight: 600;
@@ -70,7 +70,7 @@ nav button {
 .banner > a {
   position: absolute;
   bottom: 10px;
-  color: lightgoldenrodyellow;
+  color: white;
   font-size: 0.8rem;
 }
 
@@ -87,13 +87,14 @@ nav button {
 #content {
   grid-column: 2 / 3;
   padding: 40px 60px;
-  color: rgb(255, 202, 181);
+  color: lightgray;
   font-family: var(--system-serif);
 }
 
 /*------------------ HOME STYLES --------------------*/
 
 #content h2 {
+  color: salmon;
   font-size: 3rem;
   margin: 0 0 50px 0;
 }
@@ -159,6 +160,16 @@ h3 {
   text-align: justify;
 }
 
+/*----------------- ABOUT STYLES --------------------*/
+
+.about-container #about-header {
+  font-size: 4rem;
+}
+
+.about-container p {
+  font-size: 2rem;
+}
+
 /*------------------ FOOTER STYLES ------------------*/
 
 footer {
@@ -184,7 +195,7 @@ footer a {
 
 footer p,
 footer a {
-  color: lightsalmon;
+  color: salmon;
 }
 
 footer img {
