@@ -18,7 +18,7 @@ header {
   grid-row: 1 / 2;
   display: flex;
   align-items: center;
-  color: lightgoldenrodyellow;
+  color: lightsalmon;
   background-color: black;
 }
 
@@ -39,7 +39,7 @@ header nav {
 nav button {
   border: none;
   border-radius: 20px;
-  background-color: lightgoldenrodyellow;
+  background-color: lightsalmon;
   width: 80%;
   height: 35px;
   font-weight: 600;
@@ -68,10 +68,17 @@ nav button {
 
 .banner:first-child {
   background-image: url('./1a5b9fe6adcaf81f47aa.jpg');
+  grid-column: 1 / 2;
 }
 
 .banner:last-child {
   background-image: url('./ab4ccbcbb49d1ca8bbb1.jpg');
+  grid-column: 3 / 4;
+}
+
+#content {
+  grid-column: 2 / 3;
+  padding: 20px;
 }
 
 footer {
@@ -80,7 +87,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(206, 219, 240);
   z-index: 2;
   font-size: 1.1rem;
 }
@@ -91,7 +97,6 @@ footer p {
 
 footer a {
   text-decoration: underline;
-  color: rgb(255, 208, 120);
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -99,7 +104,7 @@ footer a {
 
 footer p,
 footer a {
-  color: lightgoldenrodyellow;
+  color: lightsalmon;
 }
 
 footer img {
