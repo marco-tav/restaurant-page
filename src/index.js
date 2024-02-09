@@ -5,4 +5,4 @@ import createHome from './components/home';
 import createMenu from './components/menu';
 import createAbout from './components/about';
 
-createAbout();
+createHome();
