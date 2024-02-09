@@ -50,7 +50,7 @@ function createSlide(textContent) {
   slide.setAttribute('class', 'slide');
 
   const img = document.createElement('div');
-  img.setAttribute('class', 'img-`placeholder');
+  img.setAttribute('class', 'img-placeholder');
 
   const placeholderPara = document.createElement('p');
   placeholderPara.innerText = 'placeholder';
