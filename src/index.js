@@ -6,3 +6,25 @@ import createMenu from './components/menu';
 import createAbout from './components/about';
 
 createHome();
+
+const main = (function() {
+  const contentContainer = document.getElementById('content');
+  const homeBtn = document.getElementById('home-btn');
+  const menuBtn = document.getElementById('menu-btn');
+  const aboutBtn = document.getElementById('about-btn');
+
+  homeBtn.addEventListener('click', (e) => {
+    contentContainer.innerText = "";
+    createHome();
+  })
+
+  menuBtn.addEventListener('click', (e) => {
+    contentContainer.innerHTML = "";
+    createMenu();
+  })
+
+  aboutBtn.addEventListener('click', (e) => {
+    contentContainer.innerHTML = "";
+    createAbout();
+  })
+})();
